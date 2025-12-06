@@ -1,16 +1,84 @@
-# React + Vite
+# Cyber Quest 2077 - Pixel Arcade
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A retro pixel-art themed Solana token landing page with an immersive game interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎮 **Interactive Game Dashboard** - Character profile with stats and equipment
+- ⚔️ **Combat Simulation** - Battle against rogue AI enemies
+- 🗺️ **Tactical Map** - Explore sectors and find collectibles
+- 💰 **Token Information** - Complete Solana token details and links
+- 🎨 **Pixel Art Assets** - Custom pixel art graphics throughout
+- 📱 **Fully Responsive** - Works on all devices
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UI framework
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling with custom pixel colors
+- **Lucide React** - Icons
+- **Press Start 2P** - Pixel font
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5174` (or the port shown in terminal)
+
+### Build
+
+```bash
+npm run build
+```
+
+## Configuration
+
+Edit the `TOKEN_CONFIG` object in `src/App.jsx` to customize:
+
+- Token name and symbol
+- Contract address
+- Social media links (Telegram, Discord, Twitter)
+- DexScreener and Pump.fun links
+
+## Deployment
+
+This project is configured for easy deployment on Vercel:
+
+1. Push to GitHub
+2. Import project in Vercel
+3. Vercel will auto-detect Vite settings
+4. Deploy!
+
+## Customization
+
+### Colors
+
+Edit `tailwind.config.js` to change the pixel color palette:
+- `pixel-dark`: `#2d1b2e`
+- `pixel-pink`: `#ff0055`
+- `pixel-blue`: `#00e5ff`
+- `pixel-yellow`: `#fff200`
+
+### Assets
+
+Replace images in the `public/` folder:
+- `logo-cyber-quest.png` - Main logo
+- `paladin-avatar.png` - Character avatar
+- `rogue-ai-enemy.png` - Enemy sprite
+- `rifle.png` - Weapon graphic
+- `box.png` - Collectible crates
+- `card.png` - Data card
+
+## License
+
+MIT
